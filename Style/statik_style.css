@@ -1,0 +1,291 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Arimo', sans-serif;
+}
+html ,body{
+	height: 100%;
+	width: 100%;
+}
+textarea{
+	resize: none;
+}
+.top_bar{
+	background-color: #212427;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 35px;
+	z-index: 1;
+}
+.top_bar div{
+	cursor: default;
+	margin-right: 20px;
+}
+.top_bar div a{
+	margin-right: 20px;
+}
+.top{
+	background-color: #fff;
+	height: 56px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	z-index: 10;
+}
+.logo{
+	margin-left: 40px;
+	height: 35px;
+}
+.topnav{
+	font-weight: 600;
+	width: 25%;
+	margin-right: 65px;
+	display: flex;
+	justify-content: space-between;
+}
+.topnav a{
+	margin-right: 25px;
+	font-size: 15px;
+	color: #252525;
+
+}
+.topnav a:hover{
+	color: #ea5a4b;
+}
+.icon{
+	display: none;
+}
+
+
+
+
+
+.red_line{
+	background-color: #ea5a4b;
+	width: 100%;
+	height: 8px;
+}
+.footer_content{
+	background-color: #212427;
+	display: flex;
+	font-size: 14px;
+}
+.footer_content h3{
+	margin-top: 70px;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+.footer_content p{
+	color: #adadad;
+}
+.f_posts{
+	margin-right: 2%;
+	margin-left: 4%;
+	width: 29%;
+}
+.f_posts div{
+	border-bottom: 1px solid #3b3b3b;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.f_posts div:last-child{
+	padding-bottom: 45px;
+}
+.f_about{
+	margin-left: 2%;
+	width: 30%;
+}
+.f_about h3{
+	margin-bottom: 25px;
+}
+.f_about p{
+	margin-bottom: 25px;
+}
+.f_social{
+	margin-left: 4%;
+	width: 29%;
+}
+.f_social h3{
+	margin-bottom: 25px;
+}
+.f_social div{
+	display: flex;
+	flex-wrap: wrap;
+}
+.f_social div a img{
+	margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+/*Мобильная верстия*/
+
+@media screen and (max-width: 1110px){
+	.topnav{
+		width: 28%;
+	}
+}
+@media screen and (max-width: 1024px){
+	.topnav{
+		width: 30%;
+	}
+}
+@media screen and (max-width: 1024px){
+	.topnav{
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.top{
+		height: 45px;
+	}
+	.topnav{
+		z-index: 3;
+		transition: all 0.3s ease 0s;
+		height: 175px;
+		width: 100%;
+		background-color: #212427;
+		position: absolute;
+		top: -180px;
+	}
+	.topnav.active .top_bg{
+		height: 70px;
+	}
+	.topnav.active{
+		display: flex;
+		transition: all 0.3s ease 0s;
+		top: 80px;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.topnav.active a{
+		display: flex;
+		align-items: center;
+		margin-left: 25px;
+		font-size: 18px;
+		color: #adadad;
+		border-bottom: 1px solid #3b3b3b;
+		margin-top: 5px;
+		padding-bottom: 5px;
+	}
+	.topnav a{
+		display: none;
+	}
+	.icon{
+		color: #000;
+		height: 25px;
+		display: block;
+		font-size: 20px;
+		position: relative;
+		right: 4%;
+		font-weight: 1000;
+	}
+	.logo{
+		position: relative;
+		left: 42%;
+		margin-left: 0;
+	}
+	.top_bg{
+
+	}
+	.f_social div a img{
+		margin: 3px;
+	}
+	.footer_content h3{
+		margin-top: 25px;
+	}
+	.footer_content{
+		flex-wrap: wrap;
+	}
+	.f_posts{
+		width: 45%;
+	}
+	.f_about{
+		width: 45%;
+	}
+	.f_social{
+		width: 100%;
+		margin-left: 0;
+	}
+	.f_social h3{
+		text-align: center;
+		margin: 10px 0;
+	}
+	.f_posts div {
+	    margin-top: 15px;
+	    padding-bottom: 15px;
+	}
+	.f_social div {
+	    justify-content: center;
+	    margin: 0 23%;
+	}
+}
+@media screen and (max-width: 710px){
+	.footer_content{
+		flex-wrap: wrap;
+	}
+	.f_posts{
+		width: 45%;
+	}
+	.f_about{
+		width: 45%;
+	}
+	.f_social{
+		width: 100%;
+		margin-left: 0;
+	}
+	.f_social h3{
+		text-align: center;
+		margin: 10px 0;
+	}
+	.f_posts div {
+	    margin-top: 15px;
+	    padding-bottom: 15px;
+	}
+	.f_social div {
+	    justify-content: center;
+	    margin: 0 23%;
+
+	}
+}
+@media screen and (max-width: 710px){
+	.f_social div {
+	    justify-content: center;
+	    margin: 0 22%;
+	}
+}
+@media screen and (max-width: 426px){
+	.f_social div {
+	    justify-content: center;
+	    margin: 0 5%;
+	}
+}
+@media screen and (max-width: 376px){
+	.f_social div {
+	    justify-content: center;
+	    margin: 0 0;
+	}
+}
+@media screen and (max-width: 321px){
+	.top_bar {
+	    display: flex;
+	    justify-content: center;
+	}
+	.logo {
+	    left: 30%;
+	}
+}
